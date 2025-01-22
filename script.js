@@ -75,3 +75,21 @@ const falliSquadre = squadreCalcio.map ( function(squadra) {
  });
 
 console.log (falliSquadre);
+
+
+// Snack 3. Soluzione
+
+/*Scrivere una funzione che accetti tre argomenti, un array ( esempio: ['Michele', 'Fabio', 'Roberto', 'Giovanni', 'Simone', 'Chiara'] )e due numeri (a più piccolo di b).
+La funzione ritornerà un nuovo array con li elementi estratti dall'array di partenza che hanno la posizione compresa tra i due numeri (a e b). */
+
+function estraiElementi(array, a, b) {
+    return array.slice(a, b);
+}
+
+//Test per verificare la funzione:
+
+const mugiwara = ['Rufy', 'Zoro', 'Nami', 'Sanji', 'Usop', 'Chopper', 'Jimbe', 'Brook', 'Francky', 'Robin'];
+
+const risultato = estraiElementi(mugiwara, 2, 4);  
+
+console.log(risultato);  
