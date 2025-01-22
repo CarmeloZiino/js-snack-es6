@@ -83,13 +83,13 @@ console.log (falliSquadre);
 La funzione ritornerà un nuovo array con li elementi estratti dall'array di partenza che hanno la posizione compresa tra i due numeri (a e b). */
 
 function estraiElementi(array, a, b) {
-    return array.slice(a, b);
+    return array.slice(a, b + 1); //Aggiuto +1 fra parentesi, poiché non leggeva l'indice del valore b.
 }
 
 //Test per verificare la funzione:
 
 const mugiwara = ['Rufy', 'Zoro', 'Nami', 'Sanji', 'Usop', 'Chopper', 'Jimbe', 'Brook', 'Francky', 'Robin'];
 
-const risultato = estraiElementi(mugiwara, 2, 4);  
+const risultato = estraiElementi(mugiwara, 2, 7);  
 
 console.log(risultato);  
